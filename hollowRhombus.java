@@ -1,12 +1,12 @@
 public class hollowRhombus {
-    public static void HollowRhombus(int totalrows,int totalcols){
-        for(int i = 1; i<=totalrows;i++){
-            for(int j=1;j<=totalrows-i;j++){
+    public static void HollowRhombus(int n){
+        for(int i = 1; i<=n;i++){
+            for(int j=1;j<=n-i;j++){
                 System.out.print(" ");
             }
 
-            for(int j=1;j<=totalcols;j++){
-                if(j==1 || j==totalcols || i==totalrows || i==1){
+            for(int j=1;j<=n;j++){
+                if(j==1 || j==n || i==n || i==1){
                     System.out.print("*");
                 }
                 else{
@@ -17,6 +17,6 @@ public class hollowRhombus {
         }
     }
     public static void main(String[] args) {
-        HollowRhombus(5,5);
+        HollowRhombus(5);
     }
 }
